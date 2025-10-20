@@ -1,13 +1,13 @@
-import './App.css'
+import './App.css';
+import Header from './components/Header';
 
 function App() {
   return (
     <>
-    <div>
-      <h1 className='bg-gray-300 p-7'>Meu Portfólio</h1>
-    </div>
+      <Header />
+      <div className="h-96"></div>
     </>
   )
 }
 
-export default App
+export default App;
