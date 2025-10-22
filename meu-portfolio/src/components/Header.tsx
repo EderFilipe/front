@@ -1,4 +1,6 @@
 import { useEffect, useRef, useState } from "react";
+import profileImg from "../assets/EderFIlipe.svg";
+import { FaLinkedin, FaGithub } from "react-icons/fa";
 
 function Header() {
   const [activeLink, setActiveLink] = useState("sobre");
@@ -6,12 +8,20 @@ function Header() {
 
   useEffect(() => {
     const handleScroll = () => {
-      if(headerRef.current) {
-        if(window.scrollY > 0) {
-          headerRef.current.classList.add("bg-zinc-900", "py-4", "bg-opacity-80");
+      if (headerRef.current) {
+        if (window.scrollY > 0) {
+          headerRef.current.classList.add(
+            "bg-zinc-900",
+            "py-4",
+            "bg-opacity-80"
+          );
           headerRef.current.classList.remove("py-8", "bg-opacity-50");
         } else {
-          headerRef.current.classList.remove("bg-zinc-900", "py-4", "bg-opacity-80");
+          headerRef.current.classList.remove(
+            "bg-zinc-900",
+            "py-4",
+            "bg-opacity-80"
+          );
           headerRef.current.classList.add("py-8", "bg-opacity-50");
         }
       }
@@ -45,6 +55,27 @@ function Header() {
           </a>
         </nav>
       </header>
+      <div className="h-full flex items-center justify-center px-8 gap-4">
+        <div className="text-white">
+          <h1 className="text-6xl font-bold">Eder Filipe</h1>
+          <p className="text-2xl text-lime-400">Desenvolvedor Front-End</p>
+
+          <div className="flex gap-4 mt-8 text-zinc-400">
+            <a href="https://www.linkedin.com/in/eder-filipe-nascimento-ara%C3%BAjo" className="flex items-center gap-2">
+              <FaLinkedin size={24} />
+              LinkedIn
+            </a>
+
+            <a href="https://github.com/EderFilipe" className="flex items-center gap-2">
+              <FaGithub size={24} />
+              GitHub
+            </a>
+          </div>
+        </div>
+        <div>
+          <img src={profileImg} alt="" />
+        </div>
+      </div>
     </div>
   );
 }
