@@ -31,24 +31,24 @@ function Header() {
   }, []);
 
   return (
-    <div className="bg-zinc-800 h-screen w-full">
+    <div className="bg-dark-600 h-screen w-full" id="projetos">
       <header
         ref={headerRef}
         className="fixed w-full flex justify-between items-center p-8
         transition-all duration-700 ease-in-out bg-opacity-50"
       >
-        <p className="text-lime-400 font-bold text-lg">@EderFilipe</p>
+        <p className="text-green-500 font-bold text-lg">@EderFilipe</p>
         <nav className="flex gap-2 text-white">
           <a
             href="#sobre"
-            className={`${activeLink === "sobre" && "text-lime-400"}`}
+            className={`${activeLink === "sobre" && "text-green-500"}`}
             onClick={() => setActiveLink("sobre")}
           >
             Sobre
           </a>
           <a
             href="#projetos"
-            className={`${activeLink === "projetos" && "text-lime-400"}`}
+            className={`${activeLink === "projetos" && "text-green-500"}`}
             onClick={() => setActiveLink("projetos")}
           >
             Projetos
@@ -58,7 +58,7 @@ function Header() {
       <div className="h-full flex items-center justify-center px-8 gap-4">
         <div className="text-white">
           <h1 className="text-6xl font-bold">Eder Filipe</h1>
-          <p className="text-2xl text-lime-400">Desenvolvedor Front-End</p>
+          <p className="text-2xl text-green-500">Desenvolvedor Front-End</p>
 
           <div className="flex gap-4 mt-8 text-zinc-400">
             <a href="https://www.linkedin.com/in/eder-filipe-nascimento-ara%C3%BAjo" className="flex items-center gap-2">

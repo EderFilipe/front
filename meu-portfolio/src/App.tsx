@@ -7,7 +7,7 @@ function App() {
   return (
     <>
       <Header />
-      <div className=" text-zinc-100 mt-8 grid p-8 gap-4 grid-cols-1 sm:grid-cols-2 md:grid-cols-[repeat(auto-fill,320px)]">
+      <div className=" text-zinc-100 mt-8 grid p-8 gap-4 grid-cols-1 bg-dark-600 sm:grid-cols-2 md:grid-cols-[repeat(auto-fill,320px)]">
         <ProjectCard
           projectName="Plataforma de Streaming de Filmes"
           tags={["JavaScript", "Tailwind", "React"]}

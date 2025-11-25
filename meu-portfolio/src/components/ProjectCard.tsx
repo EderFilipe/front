@@ -22,7 +22,7 @@ function ProjectCard({ projectName, tags, slug, image }: ProjectCardProps) {
             </span>
           ))}
         </div>
-        <a href={`/${slug}`} className="bg-lime-400 text-zinc-950 mt-4 px-4 py-2 rounded-md w-full block text-center">
+        <a href={`/${slug}`} className="bg-green-500 text-zinc-950 mt-4 px-4 py-2 rounded-md w-full block text-center">
           Ver mais detalhes
         </a>
       </div>
