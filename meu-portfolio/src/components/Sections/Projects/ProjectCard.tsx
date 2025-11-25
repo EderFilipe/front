@@ -7,7 +7,7 @@ type ProjectCardProps = {
 
 function ProjectCard({ projectName, tags, slug, image }: ProjectCardProps) {
   return (
-    <div className="rounded-2xl shadow-lg overflow-hidden max-w-xs bg-zinc-900">
+    <div className="rounded-2xl shadow-lg overflow-hidden max-w-xs bg-dark-900">
       <img src={image} alt="" className="w-full object-cover" />
       <div className="p-4">
         <h2 className="text-zinc-100 text-xl font-bold">{projectName}</h2>
@@ -22,7 +22,7 @@ function ProjectCard({ projectName, tags, slug, image }: ProjectCardProps) {
             </span>
           ))}
         </div>
-        <a href={`/${slug}`} className="bg-green-500 text-zinc-950 mt-4 px-4 py-2 rounded-md w-full block text-center">
+        <a href={`/${slug}`} className="bg-green-500 text-dark-900 mt-4 px-4 py-2 rounded-md w-full block text-center">
           Ver mais detalhes
         </a>
       </div>

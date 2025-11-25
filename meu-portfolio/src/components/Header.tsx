@@ -55,7 +55,7 @@ function Header() {
           </a>
         </nav>
       </header>
-      <div className="h-full flex items-center justify-center px-8 gap-4">
+      <div className="h-full flex items-center justify-between px-8 gap-4 max-w-screen-xl mx-auto p-8">
         <div className="text-white">
           <h1 className="text-6xl font-bold">Eder Filipe</h1>
           <p className="text-2xl text-green-500">Desenvolvedor Front-End</p>
