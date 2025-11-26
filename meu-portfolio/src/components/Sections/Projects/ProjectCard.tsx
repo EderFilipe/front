@@ -7,11 +7,11 @@ type ProjectCardProps = {
 
 function ProjectCard({ projectName, tags, slug, image }: ProjectCardProps) {
   return (
-    <div className="rounded-2xl shadow-lg overflow-hidden max-w-xs bg-dark-900">
+    <div className="rounded-2xl shadow-lg overflow-hidden max-w-xs bg-dark-900 flex flex-col h-full">
       <img src={image} alt="" className="w-full object-cover" />
-      <div className="p-4">
+      <div className="p-4 flex flex-grow flex-col">
         <h2 className="text-zinc-100 text-xl font-bold">{projectName}</h2>
-        <div className="flex flex-wrap mt-2 gap-0.5">
+        <div className="flex flex-wrap mt-2 mb-auto">
           {tags}
           {tags.map((tag) => (
             <span
